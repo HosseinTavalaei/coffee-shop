@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/fav-icon.png" type="image/png" />
     <title>Coffee Shop</title>
-</head>
-<body>
-    
+  </head>
+  <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
+    <header class="fixed top-9 right-0 left-0 flex items-center w-[90%] px-10 py-5 h-24 mx-auto bg-black/50 rounded-3xl">
+     <div class="flex items-center w-full justify-between">
+         <!-- logo and menu -->
+      <nav class="flex items-center gap-x-9">
+        <div><img src="images/app-logo.png" alt="Golden coffee" /></div>
+        <ul class="flex gap-x-9 text-xl text-gray-300">
+          <li class="font-DanaMeduim text-orange-200"><a href="#">صفحه اصلی</a></li>
+          <!--  has sub menu -->
+          <li>
+            <a href="#">فروشگاه</a>
+            <!-- sub menu -->
+            <ul class="hidden">
+              <li><a href="#">قهوه ویژه</a></li>
+              <li><a href="#">ویژه در سطح جهانی</a></li>
+              <li><a href="#">قهوه درجه یک</a></li>
+              <li><a href="#">ترکیبات تجاری</a></li>
+              <li><a href="#">کپسول قهوه</a></li>
+              <li><a href="#">قهوه زینو برزیلی</a></li>
+            </ul>
+          </li>
+          <li><a href="#">دیکشنری</a></li>
+          <li><a href="#">بلاگ</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">تماس با ما</a></li>
+        </ul>
+      </nav>
 
+      <!-- cart & theme toggle & login link -->
+      <div class="flex gap-x-10 text-orange-200 text-xl">
+        <!--  cart icon & theme switch btn -->
+        <div class="flex items-center gap-x-5">
+          <!-- card -->
+          <div>
+            <svg class="w-8 h-8">
+              <use xlink:href="images/icons.svg#shopping-cart"></use>
+            </svg>
+          </div>
+          <!-- swith btn -->
+          <div>
+            <svg class="w-8 h-8">
+                <use xlink:href="images/icons.svg#moon"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- Divide Border  -->
+             <span class="block bg-white/20 w-px h-14"></span>
+        <!-- login link -->
+        <a href="#" class="flex items-center gap-x-2.5">
+          <svg class="w-8 h-8 ">
+            <use xlink:href="images/icons.svg#arrow-right-on-rectangle"></use>
+          </svg>
+            
+          <span>ورود | ثبت نام</span>
+        </a>
+      </div>
+     </div>
+    </header>
     <script src="scripts/app.js"></script>
-</body>
+  </body>
 </html>
