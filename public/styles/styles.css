@@ -650,8 +650,20 @@ body{
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-14 {
@@ -688,6 +700,10 @@ body{
 
 .w-px {
   width: 1px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .items-center {
@@ -768,14 +784,14 @@ body{
   padding-right: 2.5rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .font-Dana {
@@ -860,10 +876,6 @@ body{
   opacity: 1;
 }
 
-.child\:block > * {
-  display: block;
-}
-
 .child\:inline-block > * {
   display: inline-block;
 }
@@ -881,6 +893,14 @@ body{
 .child-hover\:text-orange-300 > *:hover {
   --tw-text-opacity: 1;
   color: rgb(253 186 116 / var(--tw-text-opacity, 1));
+}
+
+.dark\:inline-block:is(.dark *) {
+  display: inline-block;
+}
+
+.dark\:hidden:is(.dark *) {
+  display: none;
 }
 
 .dark\:bg-zinc-700:is(.dark *) {
