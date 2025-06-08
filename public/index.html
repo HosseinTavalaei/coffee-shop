@@ -23,18 +23,26 @@
     <title>Coffee Shop</title>
   </head>
   <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
-    <header class="fixed top-9 right-0 left-0 flex items-center w-[90%] px-10 py-5 h-24 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
+    <header
+      class="fixed top-9 right-0 left-0 hidden md:flex items-center w-[98%] lg:w-[90%] px-5 lg:px-10 py-5 h-24 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]"
+    >
       <div class="flex items-center w-full justify-between">
         <!-- logo and menu -->
-        <nav class="flex items-center gap-x-9 h-14">
-          <div><img src="images/app-logo.png" alt="Golden coffee" /></div>
-          <ul class="flex gap-x-9 text-xl text-gray-300 tracking-tightest h-full child:leading-[56px]">
+        <nav class="flex items-center gap-x-5 lg:gap-x-9 h-14">
+          <div class="shrink-0">
+            <img src="images/app-logo.png" alt="Golden coffee" />
+          </div>
+          <ul
+            class="flex gap-x-5 lg:gap-x-9 text-xl text-gray-300 tracking-tightest h-full child:leading-[56px]"
+          >
             <li class="font-DanaMeduim text-orange-200">
               <a href="#">صفحه اصلی</a>
             </li>
             <!--  has sub menu -->
             <li class="relative group">
-              <a href="#" class="group-hover:text-orange-300 transition-colors">فروشگاه</a>
+              <a href="#" class="group-hover:text-orange-300 transition-colors"
+                >فروشگاه</a
+              >
               <!-- sub menu -->
               <div
                 class="transition-all p-6 space-y-4 invisible opacity-0 group-hover:opacity-100 group-hover:visible shadow-costume tracking-normal text-zinc-700 dark:text-white text-base w-52 bg-white dark:bg-zinc-700 rounded-2xl absolute border-t-[3px] border-t-orange-300 child:inline-block child-hover:text-orange-300 child:transition-colors"
@@ -55,9 +63,11 @@
         </nav>
 
         <!-- cart & theme toggle & login link -->
-        <div class="flex gap-x-10 text-orange-200 text-xl">
+        <div
+          class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-orange-200 text-xl"
+        >
           <!--  cart icon & theme switch btn -->
-          <div class="flex items-center gap-x-5">
+          <div class="flex items-center gap-x-4 lg:gap-x-5">
             <!-- card -->
             <div class="relative cursor-pointer group">
               <!-- cart icon -->
@@ -83,10 +93,10 @@
                   </a>
                 </div>
                 <!-- Cart Body -->
-                <div class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
-                  <div
-                    class="flex items-center gap-x-2.5"
-                  >
+                <div
+                  class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5"
+                >
+                  <div class="flex items-center gap-x-2.5">
                     <img
                       src="images/products/p1.png"
                       class="w-30 h-30"
@@ -110,9 +120,7 @@
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="flex items-center gap-x-2.5"
-                  >
+                  <div class="flex items-center gap-x-2.5">
                     <img
                       src="images/products/p2.png"
                       class="w-30 h-30"
@@ -140,16 +148,24 @@
 
                 <!-- Cart Footer -->
                 <div class="flex items-center justify-between mt-5">
-                    <div>
-                      <span class="font-DanaMeduim text-gray-300 tracking-tighter text-xs">مبلغ قابل پرداخت</span>
-                      <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
-                        <span>350,000</span>
-                        <span>تومان</span>
-                      </div>
+                  <div>
+                    <span
+                      class="font-DanaMeduim text-gray-300 tracking-tighter text-xs"
+                      >مبلغ قابل پرداخت</span
+                    >
+                    <div
+                      class="text-zinc-700 dark:text-white font-DanaDemiBold"
+                    >
+                      <span>350,000</span>
+                      <span>تومان</span>
                     </div>
-                    <a href="#" class="flex items-center justify-center w-[144px] h-14 rounded-xl text-white bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 dark:hover:bg-emerald-600 transition-colors">
-                      <span class="tracking-tightest">ثبت سفارش</span>
-                    </a>
+                  </div>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center w-[144px] h-14 rounded-xl text-white bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 dark:hover:bg-emerald-600 transition-colors"
+                  >
+                    <span class="tracking-tightest">ثبت سفارش</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -171,11 +187,109 @@
               <use href="images/icons.svg#arrow-right-on-rectangle"></use>
             </svg>
 
-            <span>ورود | ثبت نام</span>
+            <span class="hidden xl:inline-block">ورود | ثبت نام</span>
           </a>
         </div>
       </div>
     </header>
+
+    <div
+      class="flex md:hidden items-center justify-between bg-white dark:bg-zinc-700 px-4 h-16"
+    >
+      <!-- bars icon -->
+      <div>
+        <svg class="w-6 h-6 text-zinc-700 dark:text-white">
+          <use href="images/icons.svg#bars-3"></use>
+        </svg>
+      </div>
+      <!-- menu -->
+      <div
+        class="bg-white dark:bg-zinc-700 py-3 px-4 w-64 min-h-screen fixed right-0 top-0 bottom-0 z-20"
+      >
+        <!-- Menu Header -->
+        <div
+          class="flex items-center justify-between pb-5 border-b border-b-gray-100 dark:border-b-white mb-6"
+        >
+          <div>
+            <svg class="w-10 h-10 text-orange-300">
+              <use href="images/icons.svg#logo"></use>
+            </svg>
+          </div>
+          <div>
+            <svg class="w-[100px] h-10 text-orange-300">
+              <use href="images/icons.svg#logo-type"></use>
+            </svg>
+          </div>
+          <div>
+            <svg class="text-zinc-600 dark:text-white w-6 h-6">
+              <use href="images/icons.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Menu footer -->
+        <div
+          class="py-5 mt-8 border-t border-t-gray-100 dark:border-t-white/10"
+        >
+          <ul class="space-y-4 px-2.5">
+            <li>
+              <a
+                href="#"
+                class="inline-flex items-center gap-x-2 text-orange-300"
+              >
+                <svg class="w-6 h-6">
+                  <use href="images/icons.svg#arrow-right-on-rectangle"></use>
+                </svg>
+                <span>ورود | ثبت نام</span>
+              </a>
+            </li>
+            <li>
+              <div class="flex dark:hidden items-center gap-x-2 text-orange-300">
+                <svg class="w-6 h-6">
+                  <use href="images/icons.svg#moon"></use>
+                </svg>
+                <span>تم تیره</span>
+              </div>
+              <div class="hidden dark:flex items-center gap-x-2 text-orange-300">
+                <svg class="w-6 h-6">
+                  <use href="images/icons.svg#sun"></use>
+                </svg>
+                <span>تم روشن</span>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-flex items-center gap-x-2 text-orange-300"
+              >
+                <svg class="w-6 h-6">
+                  <use href="images/icons.svg#shopping-cart"></use>
+                </svg>
+                <span>سبد خرید</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- logo type -->
+      <div>
+        <svg class="w-[100px] h-10 text-orange-300">
+          <use href="images/icons.svg#logo-type"></use>
+        </svg>
+      </div>
+      <!-- shopping cart icon -->
+      <div>
+        <svg class="w-6 h-6 text-zinc-700 dark:text-white">
+          <use href="images/icons.svg#shopping-cart"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div
+      id="overlay"
+      class="md:hidden bg-black/40 fixed inset-0 w-full h-full z-10"
+    ></div>
     <script src="scripts/app.js"></script>
   </body>
 </html>
